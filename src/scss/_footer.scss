@@ -1,0 +1,142 @@
+// FOOTER
+
+.footer {
+    padding: 0 5.25rem 6.7rem;
+    color: $color-white;
+
+    &__content {
+        height: 52.7rem;
+        display: flex;
+        position: relative;
+        background-image:  url(../img/Bg-Footer.png);
+        background-repeat: no-repeat;
+        background-position: 0% 60%;
+        padding: 8rem 3rem 3rem 4.4rem;
+    }
+
+    &__left {
+        flex: 0 0 45%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        @media only screen and (max-width: $bp-medium) {
+            flex: 0 0 50%;
+        }
+
+        @media only screen and (max-width: $bp-small) {
+            flex: 0 0 100%;
+        }
+    }
+
+    &__text {
+        margin-top: 4.5rem;
+
+        @media only screen and (max-width: $bp-small) {
+            display: none;
+        }
+    }
+
+    &__copyright {
+        text-transform: uppercase;
+        font-family: $font-tertiary;
+    }
+
+    &__copyright-link {
+        &:link,
+        &:visited {
+            display: inline-block;
+            color: $color-white;
+            text-decoration: none;
+            transition: color .2s,
+                        scale .2s,
+                        skew .3s;
+        }
+
+        &:hover {
+            color: $color-secondary;
+            transform: skew(-10deg, 10deg) scale(1.1);
+        }
+    }
+
+    &__right {
+        flex: 0 0 55%;
+
+        @media only screen and (max-width: $bp-medium) {
+            flex: 0 0 50%;
+        }
+
+        @media only screen and (max-width: $bp-small) {
+            flex: 0 0 0%;
+        }
+    }
+
+    &__contacts {
+        text-transform: uppercase;
+        font-size: 2.083rem;
+        font-family: $font-tertiary;
+        font-weight: 700;
+        position: absolute;
+        top: 24rem;
+        left: 75%;
+
+        @media only screen and (max-width: $bp-largest) {
+            left: 65%;
+        }
+
+        @media only screen and (max-width: $bp-medium) {
+            left: 54%!important;
+        }
+
+        @media only screen and (max-width: $bp-small) {
+            left: 4.5rem!important;
+        }
+    }
+
+    &__contact {
+        margin-bottom: 1.5rem;
+
+        & span {
+            margin-left: 2rem;
+        }
+    }
+
+    &__icon-pin {
+        font-size: 2.52rem;
+    }
+
+    &__social {
+        position: absolute;
+        bottom: 1.5rem;
+        left: 87%;
+        font-size: 2.5rem;
+
+        @media only screen and (max-width: $bp-largest) {
+            left: 83%;
+        }
+
+        @media only screen and (max-width: $bp-medium) {
+            left: 75%!important;
+        }
+
+        @media only screen and (max-width: $bp-small) {
+            bottom: 8.5rem;
+            left: 4.5rem!important;
+        }
+
+        & a {
+            &:link,
+            &:visited {
+                color: $color-white;
+                margin-right: 1rem;
+                transition: all 0.2s;
+                text-decoration: none;
+            }
+
+            &:hover {
+                color: $color-tertiary;
+            }
+        }
+    }
+    
+}

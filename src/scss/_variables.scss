@@ -1,0 +1,32 @@
+// FONTS
+$font-primary: 'Montserrat', sans-serif;
+$font-secondary: 'Alfa Slab One', cursive;
+$font-tertiary: "bebasneue";
+
+// COLORS
+$color-primary: #3d2514;
+$color-primary-light: #573a1d;
+$color-secondary: #ffc045;
+$color-tertiary: #bf2222; 
+$color-tertiary-light: #bb4747; 
+$color-white: #fff;
+$color-grey: #3d3d3d;
+$color-grey-light: #bebebe;
+
+// BORDERS
+$border-grey-small: 1px solid $color-grey-light;
+$border-valid: 1px solid $color-secondary;
+$border-invalid: 1px solid $color-tertiary;
+
+//SHADOWS
+$shadow-white: rgba(255, 255, 255, 1);
+$shadow-black: rgba(0, 0, 0, .4);
+
+// RESPONSIVE BREAKPOINTS
+$bp-largest: 78.125em; //1250px
+$bp-large: 65.625em; //1050px
+$bp-medium: 50.0em; //800px
+$bp-small: 37.5em; //600px
+$bp-smallest: 25em; //400px
+
+

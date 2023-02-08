@@ -1,0 +1,104 @@
+.h1,
+.h2,
+.h3 {
+    font-family: $font-secondary;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.h1 {
+    font-size: 11.43rem;
+    text-shadow: .3rem .5rem 0rem $shadow-white;
+    line-height: .65;
+
+    @media only screen and (max-width: $bp-large) {
+        font-size: 9.5rem;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+        font-size: 14.8rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+        font-size: 8.7rem;
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+        font-size: 6rem;
+    }
+
+    & span {
+        font-size: 5.649rem;
+
+        @media only screen and (max-width: $bp-large) {
+            font-size: 4.5rem;
+        }
+    }
+
+}
+
+.h2 {
+    font-size: 5rem;
+
+    @media only screen and (max-width: $bp-large) {
+        font-size: 4.5rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+        font-size: 3.5rem;
+    }
+}
+
+.h3 {
+    font-size: 4.167rem;
+
+    @media only screen and (max-width: $bp-small) {
+        font-size: 3rem;
+    }
+}
+
+.h4,
+.h5,
+.h6 {
+    font-family: $font-tertiary;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.h4 {
+    font-size: 3.75rem;
+
+    @media only screen and (max-width: $bp-large) {
+        font-size: 2.75rem;
+    }
+
+}
+
+.h5 {
+    font-size: 2.917rem;
+    color: $color-primary;
+
+    @media only screen and (max-width: $bp-small) {
+        font-size: 1.9rem;
+    }
+
+    &--grey {
+        color: $color-grey;
+    }
+}
+
+.h6 {
+    font-size: 2.5rem;
+    line-height: 1;
+
+    @media only screen and (max-width: $bp-small) {
+        font-size: 1.8rem;
+    }
+
+    & span {
+        display: inline-block;
+        background-color: $color-secondary;
+        padding: 1rem 2.2rem;
+    }
+
+}
